@@ -3,8 +3,6 @@ from datetime import datetime
 
 # Create your models here.
 
-
-# Create your models here.
 class Contact(models.Model):
     first_name = models.CharField(max_length=100)
     last_name = models.CharField(max_length=100)
