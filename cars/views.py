@@ -5,7 +5,7 @@ from django.core.paginator import EmptyPage, PageNotAnInteger, Paginator
 # Create your views here.
 def cars(request):
     cars = Car.objects.order_by('-created_date')
-    paginator = Paginator(cars, 4)
+    paginator = Paginator(cars, 3)
     page = request.GET.get('page')
     paged_cars = paginator.get_page(page)
 
