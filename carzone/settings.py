@@ -26,7 +26,7 @@ SECRET_KEY = 'y-4nc@)fg#ke7p@(4l=6s9_bw4%u@ucyb2^+*qh7$qko_e!s%o'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['https://lit-chamber-78235.herokuapp.com/']
+ALLOWED_HOSTS = ['https://lit-chamber-78235.herokuapp.com']
 
 LOGIN_REDIRECT_URL = 'dashboard'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
