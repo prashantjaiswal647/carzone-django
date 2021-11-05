@@ -23,7 +23,7 @@ def cars(request):
         'body_style_search': body_style_search,
     }
 
-    return render(request, 'cars/cars.html')
+    return render(request, 'cars/cars.html', data)
 
 
 def car_detail(request, id):

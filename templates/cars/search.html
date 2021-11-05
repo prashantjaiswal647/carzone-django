@@ -10,7 +10,7 @@
         <div class="breadcrumb-areas">
             <h1>Search Results</h1>
             <ul class="breadcrumbs">
-                <li><a href="index.html">Home</a></li>
+                <li><a href={% url 'home' %}>Home</a></li>
                 <li class="active">Search</li>
             </ul>
         </div>
@@ -27,7 +27,7 @@
                         <div class="col-lg-3 col-md-6 col-sm-6 col-6">
                             <div class="form-group">
                                 <select class="selectpicker search-fields" name="model">
-                                    <option>Select Model</option>
+                                    <option selected='selected' disabled='disabled'>Select Model</option>
                                     {% for model in model_search %}
                                       <option value="{{model}}">{{model}}</option>
                                     {% endfor %}
@@ -79,7 +79,7 @@
                         <div class="col-lg-3 col-md-6 col-sm-6 col-6">
                             <div class="form-group">
                                 <div class="range-slider">
-                                    <div data-min="0" data-max="150000" data-unit="USD" data-min-name="min_price" data-max-name="max_price" class="range-slider-ui ui-slider" aria-disabled="false"></div>
+                                    <div data-min="0" data-max="5000000" data-unit="INR" data-min-name="min_price" data-max-name="max_price" class="range-slider-ui ui-slider" aria-disabled="false"></div>
                                     <div class="clearfix"></div>
                                 </div>
                             </div>

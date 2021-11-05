@@ -49,7 +49,7 @@ def contact(request):
         send_mail(
                 email_subject,
                 message_body,
-                'rathan.kumar049@gmail.com',
+                'prashantjaiswal647@gmail.com',
                 [admin_email],
                 fail_silently=False,
             )
